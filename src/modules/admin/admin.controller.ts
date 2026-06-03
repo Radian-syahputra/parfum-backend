@@ -49,7 +49,7 @@ export const updateUserRoleController = async (
 ) => {
   try {
     const { id } = req.params;
-    const role = req.user!.role;
+    const role = req.body;
 
     if (!role || !["ADMIN", "CUSTOMER"].includes(role)) {
       return errorResponse(res, "Role tidak valid", 400);

@@ -9,7 +9,6 @@ import {
 import { successResponse, errorResponse } from "../../utils/response";
 import { AuthRequest } from "../../middlewares/auth";
 import { OrderStatus } from "@prisma/client";
-import strict from "node:assert/strict";
 
 export const createOrderController = async (
   req: AuthRequest,
